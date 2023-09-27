@@ -30,6 +30,8 @@ This is a Google Scholar search code that can help you search for any papers you
 
 #### general_search
 
+##### [ return back to `Functions` tables](#Functions)
+
 ```python
 import google_scholar_research as gr
 # just in case user needs to reload module
@@ -97,6 +99,8 @@ print(result)
 
 #### citations_search
 
+##### [ return back to `Functions` tables](#Functions)
+
 ```python
 import google_scholar_research as gr
 # just in case user needs to reload module
@@ -108,6 +112,8 @@ print(result)
 ```
 
 #### search_at_year
+
+##### [ return back to `Functions` tables](#Functions)
 
 ```python
 import google_scholar_research as gr
@@ -121,6 +127,8 @@ print(result)
 
 #### search_until_year
 
+##### [ return back to `Functions` tables](#Functions)
+
 ```python
 import google_scholar_research as gr
 # just in case user needs to reload module
@@ -133,6 +141,8 @@ print(result)
 
 #### search_for_both_citations_and_at_year
 
+##### [ return back to `Functions` tables](#Functions)
+
 ```python
 import google_scholar_research as gr
 # just in case user needs to reload module
@@ -144,6 +154,8 @@ print(result)
 ```
 
 #### search_for_both_citations_and_until_year
+
+##### [ return back to `Functions` tables](#Functions)
 
 ```python
 import google_scholar_research as gr
