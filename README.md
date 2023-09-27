@@ -170,6 +170,8 @@ print(result)
 
 #### view_dataframe
 
+##### [ return back to `Functions` tables](#Functions)
+
 ```python
 # please put following code in the jupyter notebook
 result = gr.get_general_scholar_search(query ="Quant Finance", display_language = "en", num_results = 10, 
