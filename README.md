@@ -2,9 +2,7 @@
 
 ## Summary
 
-This is a Google Scholar search code that can help you search for any papers you want from WebScraping powered by Google SERP API. You shall need to obtain an API key from https://www.webscrapingapi.com/pricing/serp-api and the free trial offers 100 requests per month.   
-
-`Reminder : please replace your own API key in the search code in the folder first and then start to run the following codes`
+This is a Google Scholar search code that can help you search for any papers you want from WebScraping powered by Google SERP API. You shall need to obtain an API key from https://www.webscrapingapi.com/pricing/serp-api and the free trial offers 100 requests per month.
 
 ## Parameters 
 
@@ -29,6 +27,7 @@ This is a Google Scholar search code that can help you search for any papers you
 | [search_until_year](#search_until_year)                      | search only until year                     |
 | [search_for_both_citations_and_at_year](#search_for_both_citations_and_at_year) | include both with citations and at year    |
 | [search_for_both_citations_and_until_year](#search_for_both_citations_and_until_year) | include both with citations and until year |
+| [view_dataframe](#view_dataframe)                            | view data in DataFrame                     |
 
 #### general_search
 
@@ -169,3 +168,24 @@ result = gr.get_general_scholar_search(query = "Web3", display_language = "en", 
 print(result)
 ```
 
+#### view_dataframe
+
+```python
+# please put following code in the jupyter notebook
+result = gr.get_general_scholar_search(query ="Quant Finance", display_language = "en", num_results = 10, 
+                                      display_citations = 0, display_at_year = 0, display_until_year = 0)
+# make download link clickable
+def make_clickable(val):
+    # target _blank to open new window
+    return '<a target="_blank" href="{}">{}</a>'.format(val,val)
+  
+df = gr.view_df_data(test1)
+df.style.format({'research_link': make_clickable})
+
+# to check for only papers use following code 
+# df[df["result_type"] == "papers"].style.format({'research_link': make_clickable})
+
+df
+```
+
+![screenshot_from_df](https://github.com/codemakerss/scholars_search/blob/main/screenshots/result_df.png)
