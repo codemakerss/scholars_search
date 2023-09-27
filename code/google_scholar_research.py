@@ -1,7 +1,6 @@
 from requests import Session
 import pandas as pd
 import requests
-SERP_API_KEY = "81dJcwYeeqC8NxorykUp36UG91iAFr1O"
 
 # sort_by=relevance
 def get_general_scholar_search(query : str, display_language : str, num_results : int, display_citations : int, display_at_year : int, display_until_year : int)->dict:
