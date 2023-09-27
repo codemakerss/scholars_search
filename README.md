@@ -3,6 +3,7 @@
 ## Summary
 
 This is a Google Scholar search code that can help you search for any papers you want from WebScraping powered by Google SERP API. You shall need to obtain an API key from https://www.webscrapingapi.com/pricing/serp-api and the free trial offers 100 requests per month.
+`Reminder : please replace your own API key in the search code in the folder first and then start to run the following codes`
 
 ## Parameters 
 
